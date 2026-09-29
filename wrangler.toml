@@ -1,0 +1,16 @@
+name = "pawnpro-backend"
+main = "main.py"
+compatibility_date = "2026-09-25"
+compatibility_flags = ["python_workers"]
+
+# Fill in after running `wrangler hyperdrive create pawnpro-db --connection-string=<your Supabase DATABASE_URL>`.
+# Hyperdrive is what asyncpg connects through in production — see db/database.py.
+[[hyperdrive]]
+binding = "HYPERDRIVE"
+id = "REPLACE_WITH_HYPERDRIVE_CONFIG_ID"
+
+# Secrets (JWT_SECRET_KEY, GEMINI_API_KEY, BOSS_ACCOUNTS) are NOT set here —
+# use `wrangler secret put <NAME>` for each one. Non-secret config can go
+# in [vars] below if you don't want it in Worker secrets.
+[vars]
+FRONTEND_URL = "https://your-frontend.pages.dev"

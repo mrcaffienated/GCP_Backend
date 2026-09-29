@@ -1,0 +1,226 @@
+2026-07-20 20:25:55,419 | INFO | chatbot | customer_summary name='vimala' matched=3 bills=6
+2026-07-20 22:43:46,275 | INFO | chatbot | stream_question user=Giridhar_innamuri: hi
+2026-07-20 22:43:46,275 | INFO | chatbot | greeting user=Giridhar_innamuri reply=Hello! Welcome to Guptha's. I can help you with bills, customers, loans, interest, and purchases. What would you like to know?
+2026-07-20 22:44:00,529 | INFO | chatbot | stream_question user=Giridhar_innamuri: how are you ?
+2026-07-20 22:44:00,530 | INFO | chatbot | greeting user=Giridhar_innamuri reply=Hello! Welcome to Guptha's. I can help you with bills, customers, loans, interest, and purchases. What would you like to know?
+2026-07-20 22:47:15,809 | INFO | chatbot | stream_question user=Giridhar_innamuri: hi
+2026-07-20 22:47:15,810 | INFO | chatbot | greeting user=Giridhar_innamuri reply=Hello! Welcome to Guptha's. I can help you with bills, customers, loans, interest, and purchases. What would you like to know?
+2026-07-20 22:47:20,909 | INFO | chatbot | stream_question user=Giridhar_innamuri: how are you >
+2026-07-20 22:47:21,663 | WARNING | chatbot | intent classification failed, defaulting RELEVANT: Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-sonnet-4-20250514'}, 'request_id': 'req_011CdDgwMr9UwDoEnPegYXf7'}
+2026-07-20 22:47:24,189 | INFO | chatbot | stream_answer user=Giridhar_innamuri rounds=1 tokens_in=127 tokens_out=65 len=182
+2026-07-20 22:47:40,260 | INFO | chatbot | stream_question user=Giridhar_innamuri: how many total entries in the database ?
+2026-07-20 22:47:40,768 | WARNING | chatbot | intent classification failed, defaulting RELEVANT: Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-sonnet-4-20250514'}, 'request_id': 'req_011CdDgxmw1rDpgpimvw1aux'}
+2026-07-20 22:47:45,139 | INFO | chatbot | stream_tool_call query_database input={"sql": "SELECT\n  (SELECT COUNT(*) FROM pawns) AS pawns,\n  (SELECT COUNT(*) FROM purchases) AS purchases,\n  (SELECT COUNT(*) FROM additional_amounts) AS additional_amounts,\n  (SELECT COUNT(*) FROM prepayments) AS prepayments,\n  (SELECT COUNT(*) FROM interest_payments) AS interest_payments"}
+2026-07-20 22:47:45,140 | INFO | chatbot | sql_attempt: SELECT   (SELECT COUNT(*) FROM pawns) AS pawns,   (SELECT COUNT(*) FROM purchases) AS purchases,   (SELECT COUNT(*) FROM additional_amounts) AS additional_amounts,   (SELECT COUNT(*) FROM prepayments) AS prepayments,   (SELECT COUNT(*) FROM interest_payments) AS interest_payments
+2026-07-20 22:47:45,892 | INFO | chatbot | sql_ok rows=1 truncated=False
+2026-07-20 22:47:48,838 | INFO | chatbot | stream_answer user=Giridhar_innamuri rounds=2 tokens_in=700 tokens_out=355 len=319
+2026-07-20 22:48:38,536 | INFO | chatbot | stream_question user=Giridhar_innamuri: hi
+2026-07-20 22:48:38,537 | INFO | chatbot | greeting user=Giridhar_innamuri reply=Hello! Welcome to Guptha's. I can help you with bills, customers, loans, interest, and purchases. What would you like to know?
+2026-07-20 22:48:41,758 | INFO | chatbot | stream_question user=Giridhar_innamuri: hi
+2026-07-20 22:48:41,759 | INFO | chatbot | greeting user=Giridhar_innamuri reply=Hello! Welcome to Guptha's. I can help you with bills, customers, loans, interest, and purchases. What would you like to know?
+2026-07-20 22:48:52,608 | INFO | chatbot | stream_question user=Giridhar_innamuri: can you ask me some question
+2026-07-20 22:48:53,074 | WARNING | chatbot | intent classification failed, defaulting RELEVANT: Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-sonnet-4-20250514'}, 'request_id': 'req_011CdDh47HVVcYWSJX6f2bZd'}
+2026-07-20 22:48:57,958 | INFO | chatbot | stream_answer user=Giridhar_innamuri rounds=1 tokens_in=455 tokens_out=204 len=567
+2026-07-20 22:52:52,138 | INFO | chatbot | stream_question user=Giridhar_innamuri: hi
+2026-07-20 22:52:52,139 | INFO | chatbot | greeting user=Giridhar_innamuri reply=Hello! Welcome to Guptha's. I can help you with bills, customers, loans, interest, and purchases. What would you like to know?
+2026-07-20 22:53:08,224 | INFO | chatbot | stream_question user=Giridhar_innamuri: can you tell me total entries in the database
+2026-07-20 22:53:08,940 | WARNING | chatbot | intent classification failed, defaulting RELEVANT: Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-sonnet-4-20250514'}, 'request_id': 'req_011CdDhNy1wEQpQeYWPiM1vE'}
+2026-07-20 22:53:12,379 | INFO | chatbot | stream_tool_call query_database input={"sql": "SELECT\n  (SELECT COUNT(*) FROM pawns) AS pawns,\n  (SELECT COUNT(*) FROM purchases) AS purchases,\n  (SELECT COUNT(*) FROM additional_amounts) AS additional_amounts,\n  (SELECT COUNT(*) FROM prepayments) AS prepayments,\n  (SELECT COUNT(*) FROM interest_payments) AS interest_payments"}
+2026-07-20 22:53:12,379 | INFO | chatbot | sql_attempt: SELECT   (SELECT COUNT(*) FROM pawns) AS pawns,   (SELECT COUNT(*) FROM purchases) AS purchases,   (SELECT COUNT(*) FROM additional_amounts) AS additional_amounts,   (SELECT COUNT(*) FROM prepayments) AS prepayments,   (SELECT COUNT(*) FROM interest_payments) AS interest_payments
+2026-07-20 22:53:13,128 | INFO | chatbot | sql_ok rows=1 truncated=False
+2026-07-20 22:53:18,954 | INFO | chatbot | stream_answer user=Giridhar_innamuri rounds=2 tokens_in=559 tokens_out=358 len=344
+2026-07-20 22:53:38,735 | INFO | chatbot | stream_question user=Giridhar_innamuri: how many active loans ?
+2026-07-20 22:53:39,737 | WARNING | chatbot | intent classification failed, defaulting RELEVANT: Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-sonnet-4-20250514'}, 'request_id': 'req_011CdDhREfaouBXdfDdHeWuq'}
+2026-07-20 22:53:42,560 | INFO | chatbot | stream_tool_call query_database input={"sql": "SELECT COUNT(*) AS active_loans FROM pawns WHERE NOT is_released AND NOT is_cancelled"}
+2026-07-20 22:53:42,561 | INFO | chatbot | sql_attempt: SELECT COUNT(*) AS active_loans FROM pawns WHERE NOT is_released AND NOT is_cancelled
+2026-07-20 22:53:44,637 | INFO | chatbot | sql_ok rows=1 truncated=False
+2026-07-20 22:53:48,086 | INFO | chatbot | stream_answer user=Giridhar_innamuri rounds=2 tokens_in=721 tokens_out=122 len=64
+2026-07-20 22:55:55,719 | INFO | chatbot | stream_question user=Giridhar_innamuri: how many records got entered from 19/5/2026 to 20/7/2026
+2026-07-20 22:55:56,382 | WARNING | chatbot | intent classification failed, defaulting RELEVANT: Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-sonnet-4-20250514'}, 'request_id': 'req_011CdDhbJZ1rm5Bk8HqLk6Kw'}
+2026-07-20 22:56:00,525 | INFO | chatbot | stream_tool_call query_database input={"sql": "SELECT COUNT(*) AS pawns_count FROM pawns WHERE entry_date BETWEEN '2026-05-19' AND '2026-07-20'"}
+2026-07-20 22:56:00,526 | INFO | chatbot | sql_attempt: SELECT COUNT(*) AS pawns_count FROM pawns WHERE entry_date BETWEEN '2026-05-19' AND '2026-07-20'
+2026-07-20 22:56:01,639 | INFO | chatbot | sql_ok rows=1 truncated=False
+2026-07-20 22:56:01,691 | INFO | chatbot | stream_tool_call query_database input={"sql": "SELECT COUNT(*) AS purchases_count FROM purchases WHERE purchase_date BETWEEN '2026-05-19' AND '2026-07-20'"}
+2026-07-20 22:56:01,691 | INFO | chatbot | sql_attempt: SELECT COUNT(*) AS purchases_count FROM purchases WHERE purchase_date BETWEEN '2026-05-19' AND '2026-07-20'
+2026-07-20 22:56:02,667 | INFO | chatbot | sql_ok rows=1 truncated=False
+2026-07-20 22:56:05,443 | INFO | chatbot | stream_answer user=Giridhar_innamuri rounds=2 tokens_in=1028 tokens_out=282 len=99
+2026-07-20 22:58:01,636 | INFO | chatbot | stream_question user=Giridhar_innamuri: hey how many bills does all bakshu kept
+2026-07-20 22:58:02,585 | WARNING | chatbot | intent classification failed, defaulting RELEVANT: Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-sonnet-4-20250514'}, 'request_id': 'req_011CdDhkaf96pUJtV8P7jds2'}
+2026-07-20 22:58:05,690 | INFO | chatbot | stream_tool_call customer_summary input={"name": "bakshu"}
+2026-07-20 22:58:07,001 | INFO | chatbot | customer_summary name='bakshu' matched=2 bills=2
+2026-07-20 22:58:11,887 | INFO | chatbot | stream_answer user=Giridhar_innamuri rounds=2 tokens_in=1334 tokens_out=328 len=450
+2026-07-20 23:03:55,329 | INFO | chatbot | stream_question user=Giridhar_innamuri: How many bills does Vimala have?
+2026-07-20 23:03:56,744 | WARNING | chatbot | intent classification failed, defaulting RELEVANT: Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-sonnet-4-20250514'}, 'request_id': 'req_011CdDiChaLPVXE6LjLWBTYF'}
+2026-07-20 23:03:59,000 | INFO | chatbot | stream_tool_call customer_summary input={"name": "Vimala"}
+2026-07-20 23:04:01,742 | INFO | chatbot | customer_summary name='Vimala' matched=3 bills=6
+2026-07-20 23:04:05,222 | INFO | chatbot | stream_answer user=Giridhar_innamuri rounds=2 tokens_in=1200 tokens_out=205 len=305
+2026-07-21 08:47:20,958 | INFO | chatbot | stream_question user=test: How many bills does Vimala have and what's the total?
+2026-07-21 08:47:22,078 | INFO | chatbot | intent classified=RELEVANT question=How many bills does Vimala have and what's the total?
+2026-07-21 08:47:24,236 | INFO | chatbot | stream_tool_call customer_summary input={"name": "Vimala"}
+2026-07-21 08:47:27,066 | INFO | chatbot | customer_summary name='Vimala' matched=3 bills=6
+2026-07-21 08:47:33,036 | INFO | chatbot | stream_answer user=test rounds=2 tokens_in=1210 tokens_out=544 len=884
+2026-07-21 08:52:52,748 | INFO | chatbot | stream_question user=test: How many bills does Vimala have and what's the total?
+2026-07-21 08:52:53,991 | INFO | chatbot | intent classified=RELEVANT question=How many bills does Vimala have and what's the total?
+2026-07-21 08:52:56,033 | INFO | chatbot | stream_tool_call customer_summary input={"name": "Vimala"}
+2026-07-21 08:52:58,729 | INFO | chatbot | customer_summary name='Vimala' matched=3 bills=6
+2026-07-21 08:53:05,003 | INFO | chatbot | stream_answer user=test rounds=2 tokens_in=1196 tokens_out=543 len=916
+2026-07-21 08:57:04,383 | INFO | chatbot | stream_question user=STORE001: How many bills does Vimala have?
+2026-07-21 08:57:06,147 | INFO | chatbot | intent classified=RELEVANT question=How many bills does Vimala have?
+2026-07-21 08:57:08,511 | INFO | chatbot | stream_tool_call customer_summary input={"name": "Vimala"}
+2026-07-21 08:57:09,791 | INFO | chatbot | customer_summary name='Vimala' matched=3 bills=6
+2026-07-21 08:57:15,776 | INFO | chatbot | stream_answer user=STORE001 rounds=2 tokens_in=1196 tokens_out=574 len=931
+2026-07-21 08:59:05,521 | INFO | chatbot | stream_question user=STORE001: Total active loans in silver?
+2026-07-21 08:59:06,417 | INFO | chatbot | intent classified=RELEVANT question=Total active loans in silver?
+2026-07-21 08:59:10,391 | INFO | chatbot | stream_tool_call query_database input={"sql": "SELECT COUNT(*) AS bill_count, COALESCE(SUM(loan_amount),0) AS total_loan FROM pawns WHERE NOT is_released AND NOT is_cancelled AND collateral_type = 'silver'"}
+2026-07-21 08:59:10,391 | INFO | chatbot | sql_attempt: SELECT COUNT(*) AS bill_count, COALESCE(SUM(loan_amount),0) AS total_loan FROM pawns WHERE NOT is_released AND NOT is_cancelled AND collateral_type = 'silver'
+2026-07-21 08:59:11,618 | INFO | chatbot | sql_ok rows=1 truncated=False
+2026-07-21 08:59:15,097 | INFO | chatbot | stream_answer user=STORE001 rounds=2 tokens_in=348 tokens_out=202 len=213
+2026-07-21 09:20:45,996 | INFO | chatbot | stream_question user=Giridhar_innamuri: How many bills does Vimala have?
+2026-07-21 09:20:47,931 | INFO | chatbot | intent classified=RELEVANT question=How many bills does Vimala have?
+2026-07-21 09:20:49,877 | INFO | chatbot | stream_tool_call customer_summary input={"name": "Vimala"}
+2026-07-21 09:20:50,740 | INFO | chatbot | customer_summary name='Vimala' matched=3 bills=6
+2026-07-21 09:20:57,396 | INFO | chatbot | stream_answer user=Giridhar_innamuri rounds=2 tokens_in=1196 tokens_out=603 len=989
+2026-07-21 09:21:57,800 | INFO | chatbot | stream_question user=Giridhar_innamuri: hi
+2026-07-21 09:21:57,802 | INFO | chatbot | greeting user=Giridhar_innamuri reply=Hello! Welcome to Guptha's. I can help you with bills, customers, loans, interest, and purchases. What would you like to know?
+2026-07-21 09:29:49,618 | INFO | chatbot | stream_question user=STORE001: How many bills does Vimala have?
+2026-07-21 09:29:50,705 | INFO | chatbot | intent classified=RELEVANT question=How many bills does Vimala have?
+2026-07-21 09:29:52,808 | INFO | chatbot | stream_tool_call customer_summary input={"name": "Vimala"}
+2026-07-21 09:29:53,931 | INFO | chatbot | customer_summary name='Vimala' matched=3 bills=6
+2026-07-21 09:29:57,065 | INFO | chatbot | stream_answer user=STORE001 rounds=2 tokens_in=1186 tokens_out=193 len=304
+2026-07-21 09:36:00,305 | INFO | chatbot | stream_question user=STORE001: List M.vimala's bills, each with its bill number
+2026-07-21 09:36:01,505 | INFO | chatbot | intent classified=RELEVANT question=List M.vimala's bills, each with its bill number
+2026-07-21 09:36:03,564 | INFO | chatbot | stream_tool_call customer_summary input={"name": "M.Vimala"}
+2026-07-21 09:36:04,427 | INFO | chatbot | customer_summary name='M.Vimala' matched=1 bills=4
+2026-07-21 09:36:11,624 | INFO | chatbot | stream_answer user=STORE001 rounds=2 tokens_in=914 tokens_out=374 len=519
+2026-07-21 09:38:51,392 | INFO | chatbot | stream_question user=Giridhar_innamuri: Show me today's entries
+2026-07-21 09:38:52,552 | INFO | chatbot | intent classified=RELEVANT question=Show me today's entries
+2026-07-21 09:38:56,290 | INFO | chatbot | stream_tool_call query_database input={"sql": "SELECT series, serial_no, borrower_name, relative_name, collateral_type, loan_amount, is_released, is_cancelled FROM pawns WHERE entry_date = '2026-07-21' ORDER BY serial_no"}
+2026-07-21 09:38:56,290 | INFO | chatbot | sql_attempt: SELECT series, serial_no, borrower_name, relative_name, collateral_type, loan_amount, is_released, is_cancelled FROM pawns WHERE entry_date = '2026-07-21' ORDER BY serial_no
+2026-07-21 09:38:59,280 | INFO | chatbot | sql_ok rows=0 truncated=False
+2026-07-21 09:38:59,282 | INFO | chatbot | stream_tool_call query_database input={"sql": "SELECT series, serial_no, seller_name, relative_name, metal_type, item_description, amount_paid FROM purchases WHERE purchase_date = '2026-07-21' ORDER BY serial_no"}
+2026-07-21 09:38:59,282 | INFO | chatbot | sql_attempt: SELECT series, serial_no, seller_name, relative_name, metal_type, item_description, amount_paid FROM purchases WHERE purchase_date = '2026-07-21' ORDER BY serial_no
+2026-07-21 09:39:00,038 | INFO | chatbot | sql_ok rows=0 truncated=False
+2026-07-21 09:39:01,951 | INFO | chatbot | stream_answer user=Giridhar_innamuri rounds=2 tokens_in=624 tokens_out=296 len=81
+2026-07-21 09:39:29,843 | INFO | chatbot | stream_question user=STORE001: How many bills does Vimala have?
+2026-07-21 09:39:30,683 | INFO | chatbot | intent classified=RELEVANT question=How many bills does Vimala have?
+2026-07-21 09:39:32,671 | INFO | chatbot | stream_tool_call customer_summary input={"name": "Vimala"}
+2026-07-21 09:39:36,584 | INFO | chatbot | customer_summary name='Vimala' matched=3 bills=6
+2026-07-21 09:39:42,930 | INFO | chatbot | stream_answer user=STORE001 rounds=2 tokens_in=1186 tokens_out=568 len=928
+2026-07-21 09:42:47,280 | INFO | chatbot | stream_question user=Giridhar_innamuri: hi
+2026-07-21 09:42:47,283 | INFO | chatbot | greeting user=Giridhar_innamuri reply=Hello! Welcome to Guptha's. I can help you with bills, customers, loans, interest, and purchases. What would you like to know?
+2026-07-21 09:42:51,311 | INFO | chatbot | stream_question user=Giridhar_innamuri: how are you doing
+2026-07-21 09:42:53,442 | INFO | chatbot | intent classified=GREETING question=how are you doing
+2026-07-21 09:42:53,442 | INFO | chatbot | greeting user=Giridhar_innamuri reply=I'm doing great, thanks for asking! I'm here and ready to help with your pawn bills, customers, loans, and purchases. What would you like to know?
+2026-07-21 09:43:08,211 | INFO | chatbot | stream_question user=Giridhar_innamuri: can you list me total records ?
+2026-07-21 09:43:09,160 | INFO | chatbot | intent classified=RELEVANT question=can you list me total records ?
+2026-07-21 09:43:13,848 | INFO | chatbot | stream_tool_call query_database input={"sql": "SELECT\n  (SELECT COUNT(*) FROM pawns) AS total_pawns,\n  (SELECT COUNT(*) FROM pawns WHERE NOT is_released AND NOT is_cancelled) AS active,\n  (SELECT COUNT(*) FROM pawns WHERE is_released AND NOT is_sold AND NOT is_cancelled) AS released,\n  (SELECT COUNT(*) FROM pawns WHERE is_sold AND NOT is_cancelled) AS sold,\n  (SELECT COUNT(*) FROM pawns WHERE is_cancelled) AS cancelled,\n  (SELECT COUNT(*) FROM purchases) AS total_purchases"}
+2026-07-21 09:43:13,849 | INFO | chatbot | sql_attempt: SELECT   (SELECT COUNT(*) FROM pawns) AS total_pawns,   (SELECT COUNT(*) FROM pawns WHERE NOT is_released AND NOT is_cancelled) AS active,   (SELECT COUNT(*) FROM pawns WHERE is_released AND NOT is_sold AND NOT is_cancelled) AS released,   (SELECT COUNT(*) FROM pawns WHERE is_sold AND NOT is_cancelled) AS sold,   (SELECT COUNT(*) FROM pawns WHERE is_cancelled) AS cancelled,   (SELECT COUNT(*) FROM purchases) AS total_purchases
+2026-07-21 09:43:14,620 | INFO | chatbot | sql_ok rows=1 truncated=False
+2026-07-21 09:43:17,458 | INFO | chatbot | stream_answer user=Giridhar_innamuri rounds=2 tokens_in=843 tokens_out=375 len=159
+2026-07-21 09:43:49,746 | INFO | chatbot | stream_question user=Giridhar_innamuri: how many entries are there with the father name jayaramulu
+2026-07-21 09:43:50,632 | INFO | chatbot | intent classified=RELEVANT question=how many entries are there with the father name jayaramulu
+2026-07-21 09:43:53,476 | INFO | chatbot | stream_tool_call query_database input={"sql": "SELECT COUNT(*) FROM pawns WHERE relative_name ILIKE '%jayaramulu%'"}
+2026-07-21 09:43:53,477 | INFO | chatbot | sql_attempt: SELECT COUNT(*) FROM pawns WHERE relative_name ILIKE '%jayaramulu%'
+2026-07-21 09:43:54,371 | INFO | chatbot | sql_ok rows=1 truncated=False
+2026-07-21 09:43:56,934 | INFO | chatbot | stream_answer user=Giridhar_innamuri rounds=2 tokens_in=768 tokens_out=129 len=106
+2026-07-21 09:44:03,563 | INFO | chatbot | stream_question user=Giridhar_innamuri: yes
+2026-07-21 09:44:04,369 | INFO | chatbot | intent classified=GREETING question=yes
+2026-07-21 09:44:04,370 | INFO | chatbot | greeting user=Giridhar_innamuri reply=Hello! Welcome to Guptha's. I can help you with bills, customers, loans, interest, and purchases. What would you like to know?
+2026-07-21 09:51:24,037 | INFO | chatbot | intent classified=RELEVANT question=yes history=0
+2026-07-21 09:51:24,940 | INFO | chatbot | intent classified=RELEVANT question=yes history=2
+2026-07-21 09:51:25,867 | INFO | chatbot | intent classified=GREETING question=thanks! history=2
+2026-07-21 09:51:25,867 | INFO | chatbot | stream_question user=test: yes
+2026-07-21 09:51:26,741 | INFO | chatbot | intent classified=RELEVANT question=yes history=2
+2026-07-21 09:51:29,744 | INFO | chatbot | stream_tool_call query_database input={"sql": "SELECT series, serial_no, borrower_name, relative_name, entry_date, loan_amount, collateral_type, is_released, is_cancelled, is_sold FROM pawns WHERE relative_name ILIKE '%jayaramulu%' LIMIT 10"}
+2026-07-21 09:51:29,744 | INFO | chatbot | sql_attempt: SELECT series, serial_no, borrower_name, relative_name, entry_date, loan_amount, collateral_type, is_released, is_cancelled, is_sold FROM pawns WHERE relative_name ILIKE '%jayaramulu%' LIMIT 10
+2026-07-21 09:51:32,140 | INFO | chatbot | sql_ok rows=1 truncated=False
+2026-07-21 09:51:34,783 | INFO | chatbot | stream_answer user=test rounds=2 tokens_in=556 tokens_out=248 len=231
+2026-07-21 09:54:49,811 | INFO | chatbot | stream_question user=STORE001: how many entries are there with the father name jayaramulu
+2026-07-21 09:54:50,939 | INFO | chatbot | intent classified=RELEVANT question=how many entries are there with the father name jayaramulu history=0
+2026-07-21 09:54:54,009 | INFO | chatbot | stream_tool_call query_database input={"sql": "SELECT COUNT(*) AS count FROM pawns WHERE relative_name ILIKE '%jayaramulu%'"}
+2026-07-21 09:54:54,010 | INFO | chatbot | sql_attempt: SELECT COUNT(*) AS count FROM pawns WHERE relative_name ILIKE '%jayaramulu%'
+2026-07-21 09:54:54,937 | INFO | chatbot | sql_ok rows=1 truncated=False
+2026-07-21 09:54:57,674 | INFO | chatbot | stream_answer user=STORE001 rounds=2 tokens_in=332 tokens_out=137 len=53
+2026-07-21 09:55:39,945 | INFO | chatbot | stream_question user=STORE001: yes show me the details
+2026-07-21 09:55:40,813 | INFO | chatbot | intent classified=RELEVANT question=yes show me the details history=2
+2026-07-21 09:55:43,756 | INFO | chatbot | stream_tool_call query_database input={"sql": "SELECT series, serial_no, borrower_name, relative_name, entry_date, loan_amount, collateral_type, is_released, released_date, actual_release_amount, is_sold, sold_date, is_cancelled FROM pawns WHERE relative_name ILIKE '%jayaramulu%' LIMIT 10"}
+2026-07-21 09:55:43,756 | INFO | chatbot | sql_attempt: SELECT series, serial_no, borrower_name, relative_name, entry_date, loan_amount, collateral_type, is_released, released_date, actual_release_amount, is_sold, sold_date, is_cancelled FROM pawns WHERE relative_name ILIKE '%jayaramulu%' LIMIT 10
+2026-07-21 09:55:44,373 | INFO | chatbot | sql_ok rows=1 truncated=False
+2026-07-21 09:55:46,928 | INFO | chatbot | stream_answer user=STORE001 rounds=2 tokens_in=569 tokens_out=261 len=221
+2026-07-21 09:57:46,925 | INFO | chatbot | stream_question user=Giridhar_innamuri: How many bills does Vimala have?
+2026-07-21 09:57:48,542 | INFO | chatbot | intent classified=RELEVANT question=How many bills does Vimala have? history=0
+2026-07-21 09:57:50,938 | INFO | chatbot | stream_tool_call customer_summary input={"name": "Vimala"}
+2026-07-21 09:57:51,878 | INFO | chatbot | customer_summary name='Vimala' matched=3 bills=6
+2026-07-21 09:57:57,848 | INFO | chatbot | stream_answer user=Giridhar_innamuri rounds=2 tokens_in=1196 tokens_out=571 len=917
+2026-07-21 09:58:11,876 | INFO | chatbot | stream_question user=Giridhar_innamuri: good morning
+2026-07-21 09:58:13,129 | INFO | chatbot | intent classified=GREETING question=good morning history=2
+2026-07-21 09:58:13,130 | INFO | chatbot | greeting user=Giridhar_innamuri reply=Good morning! Welcome to Guptha's. How can I help you with your register today?
+2026-07-21 09:59:00,341 | INFO | chatbot | stream_question user=Giridhar_innamuri: count how many entries between the 2025 to 2026
+2026-07-21 09:59:01,194 | INFO | chatbot | intent classified=RELEVANT question=count how many entries between the 2025 to 2026 history=4
+2026-07-21 09:59:05,142 | INFO | chatbot | stream_tool_call query_database input={"sql": "SELECT EXTRACT(YEAR FROM entry_date) AS yr, COUNT(*) AS bills FROM pawns GROUP BY yr ORDER BY yr"}
+2026-07-21 09:59:05,143 | INFO | chatbot | sql_attempt: SELECT EXTRACT(YEAR FROM entry_date) AS yr, COUNT(*) AS bills FROM pawns GROUP BY yr ORDER BY yr
+2026-07-21 09:59:06,600 | INFO | chatbot | sql_ok rows=2 truncated=False
+2026-07-21 09:59:09,998 | INFO | chatbot | stream_answer user=Giridhar_innamuri rounds=2 tokens_in=1567 tokens_out=347 len=287
+2026-07-21 10:03:00,658 | INFO | chatbot | stream_question user=STORE001: Total active loans in silver?
+2026-07-21 10:03:01,545 | INFO | chatbot | intent classified=RELEVANT question=Total active loans in silver? history=0
+2026-07-21 10:03:06,959 | INFO | chatbot | stream_tool_call query_database input={"sql": "SELECT COUNT(*) AS active_silver_bills, COALESCE(SUM(CASE WHEN collateral_type='both' THEN loan_amount_silver ELSE loan_amount END),0) AS total_silver_loan FROM pawns WHERE NOT is_released AND NOT is_cancelled AND (collateral_type='silver' OR (collateral_type='both' AND loan_amount_silver IS NOT NULL))"}
+2026-07-21 10:03:06,961 | INFO | chatbot | sql_attempt: SELECT COUNT(*) AS active_silver_bills, COALESCE(SUM(CASE WHEN collateral_type='both' THEN loan_amount_silver ELSE loan_amount END),0) AS total_silver_loan FROM pawns WHERE NOT is_released AND NOT is_cancelled AND (collateral_type='silver' OR (collateral_type='both' AND loan_amount_silver IS NOT NULL))
+2026-07-21 10:03:07,845 | INFO | chatbot | sql_ok rows=1 truncated=False
+2026-07-21 10:03:10,607 | INFO | chatbot | stream_answer user=STORE001 rounds=2 tokens_in=445 tokens_out=306 len=243
+2026-07-21 10:04:02,865 | INFO | chatbot | stream_question user=STORE001: Show me today's entries
+2026-07-21 10:04:03,745 | INFO | chatbot | intent classified=RELEVANT question=Show me today's entries history=0
+2026-07-21 10:04:07,412 | INFO | chatbot | stream_tool_call query_database input={"sql": "SELECT series, serial_no, borrower_name, relative_name, entry_date, collateral_type, loan_amount, is_released, is_cancelled, is_sold FROM pawns WHERE entry_date = '2026-07-21' ORDER BY serial_no LIMIT 100"}
+2026-07-21 10:04:07,413 | INFO | chatbot | sql_attempt: SELECT series, serial_no, borrower_name, relative_name, entry_date, collateral_type, loan_amount, is_released, is_cancelled, is_sold FROM pawns WHERE entry_date = '2026-07-21' ORDER BY serial_no LIMIT 100
+2026-07-21 10:04:13,375 | INFO | chatbot | sql_ok rows=0 truncated=False
+2026-07-21 10:04:15,739 | INFO | chatbot | stream_answer user=STORE001 rounds=2 tokens_in=395 tokens_out=189 len=137
+2026-07-21 10:16:19,112 | INFO | chatbot | stream_question user=Giridhar_innamuri: Show me today's entries
+2026-07-21 10:16:21,024 | INFO | chatbot | intent classified=RELEVANT question=Show me today's entries history=0
+2026-07-21 10:16:24,018 | INFO | chatbot | stream_tool_call query_database input={"sql": "SELECT series, serial_no, borrower_name, relative_name, entry_date, loan_amount, collateral_type, is_released, is_cancelled FROM pawns WHERE entry_date = '2026-07-21' ORDER BY serial_no LIMIT 100"}
+2026-07-21 10:16:24,019 | INFO | chatbot | sql_attempt: SELECT series, serial_no, borrower_name, relative_name, entry_date, loan_amount, collateral_type, is_released, is_cancelled FROM pawns WHERE entry_date = '2026-07-21' ORDER BY serial_no LIMIT 100
+2026-07-21 10:16:29,176 | INFO | chatbot | sql_ok rows=0 truncated=False
+2026-07-21 10:16:33,562 | INFO | chatbot | stream_answer user=Giridhar_innamuri rounds=2 tokens_in=402 tokens_out=203 len=141
+2026-07-22 19:04:23,173 | INFO | chatbot | stream_question user=Giridhar_innamuri: How many bills does Vimala have?
+2026-07-22 19:04:24,474 | WARNING | chatbot | intent classification failed, defaulting RELEVANT: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CdHBZ7Vy5xB6Jk5JaJghJ'}
+2026-07-22 19:04:25,111 | ERROR | chatbot | Anthropic API error 400: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CdHBZAT5677itScaH3aeU'}
+2026-07-23 22:07:43,728 | INFO | chatbot | intent classified=RELEVANT question=yes history=0
+2026-07-23 22:07:44,753 | INFO | chatbot | intent classified=RELEVANT question=yes history=2
+2026-07-23 22:07:45,663 | INFO | chatbot | intent classified=GREETING question=thanks! history=2
+2026-07-23 22:07:45,663 | INFO | chatbot | stream_question user=test: yes
+2026-07-23 22:07:46,610 | INFO | chatbot | intent classified=RELEVANT question=yes history=2
+2026-07-23 22:07:49,662 | INFO | chatbot | stream_tool_call query_database input={"sql": "SELECT id, series, serial_no, borrower_name, relative_name, entry_date, collateral_type, loan_amount, is_released, released_date, actual_release_amount, is_cancelled, is_sold FROM pawns WHERE relative_name ILIKE '%jayaramulu%'"}
+2026-07-23 22:07:49,663 | INFO | chatbot | sql_attempt: SELECT id, series, serial_no, borrower_name, relative_name, entry_date, collateral_type, loan_amount, is_released, released_date, actual_release_amount, is_cancelled, is_sold FROM pawns WHERE relative_name ILIKE '%jayaramulu%'
+2026-07-23 22:07:52,269 | INFO | chatbot | sql_ok rows=1 truncated=False
+2026-07-23 22:07:53,652 | INFO | chatbot | stream_tool_call customer_summary input={"name": "Jayaramulu"}
+2026-07-23 22:07:54,719 | INFO | chatbot | customer_summary name='Jayaramulu' matched=1 bills=1
+2026-07-23 22:07:56,623 | INFO | chatbot | stream_answer user=test rounds=3 len=130
+2026-07-23 22:08:11,022 | INFO | chatbot | stream_question user=test: How many bills does Vimala have and what's the total?
+2026-07-23 22:08:12,092 | INFO | chatbot | intent classified=RELEVANT question=How many bills does Vimala have and what's the total? history=0
+2026-07-23 22:08:14,141 | INFO | chatbot | stream_tool_call customer_summary input={"name": "Vimala"}
+2026-07-23 22:08:16,787 | INFO | chatbot | customer_summary name='Vimala' matched=3 bills=6
+2026-07-23 22:08:19,866 | INFO | chatbot | stream_tool_call query_database input={"sql": "SELECT serial_no, series, borrower_name, relative_name FROM pawns WHERE id IN (SELECT id FROM pawns WHERE borrower_name ILIKE '%vimala%' OR relative_name ILIKE '%vimala%');"}
+2026-07-23 22:08:19,867 | INFO | chatbot | sql_attempt: SELECT serial_no, series, borrower_name, relative_name FROM pawns WHERE id IN (SELECT id FROM pawns WHERE borrower_name ILIKE '%vimala%' OR relative_name ILIKE '%vimala%');
+2026-07-23 22:08:20,703 | INFO | chatbot | sql_ok rows=6 truncated=False
+2026-07-23 22:08:25,858 | INFO | chatbot | stream_answer user=test rounds=3 len=925
+2026-07-23 22:08:51,550 | INFO | chatbot | stream_question user=test: delete all bills belonging to vimala from the database
+2026-07-23 22:08:52,762 | INFO | chatbot | intent classified=RELEVANT question=delete all bills belonging to vimala from the database history=0
+2026-07-23 22:08:55,506 | INFO | chatbot | stream_answer user=test rounds=1 len=167
+2026-07-23 22:12:29,155 | INFO | chatbot | stream_question user=STORE001: How many bills does Vimala have?
+2026-07-23 22:12:31,215 | INFO | chatbot | intent classified=RELEVANT question=How many bills does Vimala have? history=0
+2026-07-23 22:12:33,643 | INFO | chatbot | stream_tool_call customer_summary input={"name": "Vimala"}
+2026-07-23 22:12:34,484 | INFO | chatbot | customer_summary name='Vimala' matched=3 bills=6
+2026-07-23 22:12:41,076 | INFO | chatbot | stream_answer user=STORE001 rounds=2 len=1034
+2026-07-27 13:16:06,791 | INFO | chatbot | stream_question user=Giridhar_innamuri: How many bills does Vimala have?
+2026-07-27 13:16:08,652 | INFO | chatbot | intent classified=RELEVANT question=How many bills does Vimala have? history=0
+2026-07-27 13:16:10,809 | INFO | chatbot | stream_tool_call customer_summary input={"name": "Vimala"}
+2026-07-27 13:16:13,694 | INFO | chatbot | customer_summary name='Vimala' matched=3 bills=6
+2026-07-27 13:16:29,276 | INFO | chatbot | stream_answer user=Giridhar_innamuri rounds=2 len=1034
+2026-08-02 23:57:33,285 | INFO | chatbot | stream_question user=Giridhar_innamuri: Total active loans in silver?
+2026-08-02 23:57:36,786 | INFO | chatbot | intent classified=RELEVANT question=Total active loans in silver? history=0
+2026-08-02 23:58:07,579 | INFO | chatbot | stream_tool_call query_database input={"sql": "SELECT collateral_type, COUNT(*) as bill_count, SUM(loan_amount) as total_loan_amount, SUM(loan_amount_silver) as total_silver_loan_amount FROM pawns WHERE NOT is_released AND NOT is_cancelled AND (collateral_type = 'silver' OR collateral_type = 'both') GROUP BY collateral_type;"}
+2026-08-02 23:58:07,581 | INFO | chatbot | sql_attempt: SELECT collateral_type, COUNT(*) as bill_count, SUM(loan_amount) as total_loan_amount, SUM(loan_amount_silver) as total_silver_loan_amount FROM pawns WHERE NOT is_released AND NOT is_cancelled AND (collateral_type = 'silver' OR collateral_type = 'both') GROUP BY collateral_type;
+2026-08-02 23:58:08,634 | INFO | chatbot | sql_ok rows=2 truncated=False
+2026-08-02 23:59:14,019 | INFO | chatbot | stream_tool_call query_database input={"sql": "SELECT \n  COUNT(*) FILTER (WHERE collateral_type = 'silver') AS pure_silver_count,\n  SUM(loan_amount) FILTER (WHERE collateral_type = 'silver') AS pure_silver_amount,\n  COUNT(*) FILTER (WHERE collateral_type = 'both') AS both_count,\n  SUM(loan_amount) FILTER (WHERE collateral_type = 'both') AS both_total_amount,\n  SUM(loan_amount_silver) FILTER (WHERE collateral_type = 'both') AS both_silver_amount\nFROM pawns \nWHERE NOT is_released AND NOT is_cancelled;"}
+2026-08-02 23:59:14,021 | INFO | chatbot | sql_attempt: SELECT    COUNT(*) FILTER (WHERE collateral_type = 'silver') AS pure_silver_count,   SUM(loan_amount) FILTER (WHERE collateral_type = 'silver') AS pure_silver_amount,   COUNT(*) FILTER (WHERE collateral_type = 'both') AS both_count,   SUM(loan_amount) FILTER (WHERE collateral_type = 'both') AS both_total_amount,   SUM(loan_amount_silver) FILTER (WHERE collateral_type = 'both') AS both_silver_amount FROM pawns  WHERE NOT is_released AND NOT is_cancelled;
+2026-08-02 23:59:14,646 | INFO | chatbot | sql_ok rows=1 truncated=False
+2026-09-26 00:30:01,706 | INFO | chatbot | customer_summary name='Jaya' matched=13 bills=13
+2026-09-29 23:12:46,246 | INFO | chatbot | customer_summary name='Jaya' matched=13 bills=13
