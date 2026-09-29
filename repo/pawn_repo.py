@@ -189,11 +189,11 @@ INSERT INTO pawns (
     id, serial_no, series, entry_date, borrower_name, relative_name, phone, aadhar, address,
     item_description, item_weight, item_weight_gold, item_weight_silver, collateral_type,
     loan_amount, interest_rate, loan_amount_gold, interest_rate_gold, loan_amount_silver,
-    interest_rate_silver, is_released, is_cancelled, created_by_username, created_by_name,
-    edit_history, created_at, updated_at
+    interest_rate_silver, is_released, is_sold, is_cancelled, renewed, created_by_username,
+    created_by_name, edit_history, created_at, updated_at
 ) VALUES (
     $1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13, $14, $15, $16, $17, $18, $19, $20,
-    $21, $22, $23, $24, $25, $26, $27
+    $21, false, $22, false, $23, $24, $25, $26, $27
 )
 RETURNING *
 """
@@ -393,11 +393,11 @@ async def renew_pawn(
                 id, serial_no, series, entry_date, borrower_name, relative_name, phone, aadhar, address,
                 item_description, item_weight, item_weight_gold, item_weight_silver, collateral_type,
                 loan_amount, interest_rate, loan_amount_gold, interest_rate_gold, loan_amount_silver,
-                interest_rate_silver, is_released, is_cancelled, created_by_username, created_by_name,
-                edit_history, created_at, updated_at, renewed_from
+                interest_rate_silver, is_released, is_sold, is_cancelled, renewed, created_by_username,
+                created_by_name, edit_history, created_at, updated_at, renewed_from
             ) VALUES (
                 $1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13, $14, $15, $16, $17, $18, $19,
-                $20, false, false, $21, $22, $23, $24, $25, $26
+                $20, false, false, false, false, $21, $22, $23, $24, $25, $26
             )
             """,
             new_pawn_id,

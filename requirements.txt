@@ -1,12 +1,71 @@
-fastapi==0.111.0
-asyncpg==0.31.0
-pydantic==2.9.2
-python-jose[cryptography]==3.3.0
-bcrypt==4.1.3
-python-dotenv==1.0.1
-pandas==2.2.2
-openpyxl==3.1.2
-httpx==0.27.0
+# Complete, fully-pinned dependency set (direct + transitive), generated via
+# `uv pip freeze` against the actual synced .venv — every package that gets
+# installed, not just the ones declared directly in pyproject.toml.
+#
+# pyproject.toml remains the source of truth for what's a direct dependency
+# vs. local-dev-only tooling (the [dependency-groups].dev entries — uvicorn
+# and its "standard" extras, workers-py, workers-runtime-sdk — are never
+# needed inside the deployed Cloudflare Worker itself).
+#
+# Regenerate with:
+#   cd backend && uv sync --group dev && uv pip freeze > requirements.txt
 
-# Local dev only (never installed/needed inside the Cloudflare Worker):
-uvicorn[standard]==0.30.1
+annotated-doc==0.0.4
+annotated-types==0.7.0
+anyio==4.14.2
+asyncpg==0.31.0
+bcrypt==4.1.3
+certifi==2026.6.17
+cffi==2.1.0
+click==8.4.2
+cryptography==49.0.0
+dnspython==2.8.0
+ecdsa==0.19.2
+email-validator==2.3.0
+et-xmlfile==2.0.0
+fastapi==0.111.0
+fastapi-cli==0.0.32
+h11==0.16.0
+httpcore==1.0.9
+httptools==0.8.0
+httpx==0.27.0
+idna==3.18
+jinja2==3.1.6
+markdown-it-py==4.2.0
+markupsafe==3.0.3
+mdurl==0.1.2
+numpy==2.5.1
+openpyxl==3.1.2
+orjson==3.11.9
+pandas==2.2.2
+pyasn1==0.6.4
+pycparser==3.0
+pydantic==2.9.2
+pydantic-core==2.23.4
+pygments==2.20.0
+pyjson5==2.0.1
+pyodide-cli==0.5.0
+pyodide-py==0.29.5
+python-dateutil==2.9.0.post0
+python-dotenv==1.0.1
+python-jose==3.3.0
+python-multipart==0.0.32
+pytz==2026.2
+pyyaml==6.0.3
+rich==15.0.0
+rich-toolkit==0.20.3
+rsa==4.9.1
+shellingham==1.5.4
+six==1.17.0
+sniffio==1.3.1
+starlette==0.37.2
+typer==0.27.0
+typing-extensions==4.16.0
+tzdata==2026.3
+ujson==5.13.0
+uvicorn==0.30.1
+uvloop==0.22.1
+watchfiles==1.2.0
+websockets==14.2
+workers-py==1.17.5
+workers-runtime-sdk==1.9.1
